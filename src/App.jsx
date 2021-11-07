@@ -1,9 +1,13 @@
+import Pokemones from "./components/pokemones";
+import {Provider} from 'react-redux'
+import generateStore from "./redux/store"
 
 function App() {
+  const store = generateStore();
   return (
-    <div >
-        <h1>hola mundo</h1>
-    </div>
+    <Provider store={store}>
+      <Pokemones/>
+    </Provider>
   );
 }
 
