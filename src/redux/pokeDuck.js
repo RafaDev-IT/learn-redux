@@ -4,7 +4,7 @@ const datainitial ={
     array:[]
 }
 
-//types
+//action types
 const GET_POKEMONS_SUCCESS ='GET_POKEMONS_SUCCESS'
 
 //reducer
